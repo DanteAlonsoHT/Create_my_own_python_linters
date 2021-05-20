@@ -43,7 +43,7 @@ Follow the next steps to use this repository.
 Once you've cloned the repository, and you are inside the main folder for the project (as you did in the 2nd step in "How to use it" part above)
 you can use the next command to test your project:
 
-    > rspec ./spec/testing.rb
+    > rspec ./spec/testing_spec.rb
 
 Feel free to add more test as you want if you think it would be good for your changed project, you can add test in `./spec/testing.rb`.
 
@@ -67,9 +67,10 @@ To get a local copy up and running follow these simple example steps.
 - I've included linters to improve and cleaning the Ruby code.
 
 ### Prerequisites
-1.- Install **colorize** to use colors in the terminal:
 
-    > gem install colorize
+1.- Install the **gems** required for the repostiry using:
+
+    > bundle install
 
 - IDE to edit and run the code (I used Visual Studio Code 🔥).
 

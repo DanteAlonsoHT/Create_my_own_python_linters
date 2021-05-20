@@ -29,6 +29,7 @@ describe 'ErrorChecker' do
 
   describe '#check_empty_spaces' do
     it 'returns error_message in the line 8 when the second empty line starts' do
+      test_linter.check_empty_spaces
       test_linter.new_line("\n", 7)
       test_linter.check_empty_spaces
       test_linter.new_line("\n", 8)
@@ -52,11 +53,10 @@ describe 'ErrorChecker' do
   end
 
   describe '#add_color_to_message' do
-    it 'returns array in line 12, it shows the error message divided into an array' do
+    it 'returns 12:1 because it should check indentation error in 12 line, use [0..3] to return the first four elements -> 12:1' do
       test_linter.new_line('   print(6)', 12)
       test_linter.check_indentation
-      expect(test_linter.add_color_to_message).to eql ['12:1', 'Expected', 'indentation', 'of', '4', "spaces\n3",
-                                                       'space(s)', "found\n"]
+      expect(test_linter.add_color_to_message[0..3]).to eql '12:1'
     end
   end
 end
