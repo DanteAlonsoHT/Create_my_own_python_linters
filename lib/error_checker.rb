@@ -1,6 +1,8 @@
 require_relative 'reader'
+require 'colorize'
 
 class ErrorChecker < FileLector
+    @empty_lines = 0
     def new_line(line, lines_counter)
         @line = line
         @lines_counter = lines_counter
@@ -77,6 +79,18 @@ class ErrorChecker < FileLector
         @line.scan(/\w+/).empty? ? @empty_lines += 1 : @empty_lines = 0
         if @empty_lines > 1
             @error_message.concat("#{@lines_counter}:0 x Unexpected extra enter line(s) in the code\s")
+        end
+    end
+
+    def add_color_to_message
+        @error_message.split(/ /).each do |line_alert|
+            if line_alert.match(/[0-9]:[0-9]/)
+                print "\n[#{@file_path.colorize(:blue)}]:[#{"Linter Error".colorize(:red)}]:#{line_alert.colorize(:yellow)}"
+            elsif line_alert.match(/'/) && !line_alert.match(/\n\w+/)
+                print "\s#{line_alert.colorize(:magenta)}"
+            else
+                print "\s#{line_alert.colorize(:white)}"
+            end
         end
     end
 end
