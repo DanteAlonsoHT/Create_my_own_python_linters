@@ -1,53 +1,32 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet) ![](<https://img.shields.io/badge/-Ruby-rgb(199%2C%2032%2C%2039)?style=plastic&logo=ruby>)
 
-# OOP - Tic Tac Toe game using Ruby 🙉  <img src="https://image.flaticon.com/icons/png/512/919/919842.png" height="32" width="32">
+# Create your OWN Python Linters using Ruby 🙉  <img src="https://image.flaticon.com/icons/png/512/919/919842.png" height="32" width="32">
 
-> This repository is about an example of how to build your own tic tac toe game from scratch using Ruby.
+> This repository is about an example of how to build your own python linters from scratch using Ruby.
 
-As you can see in this repository, the main idea is to create one of the most popular games in history (**Tic Tac Toe**) using Ruby as the programming language, then the repository is to improve the *OOP* (**Object Oriented Programming**) concepts by making Tic Tac Toe game.
+As you can see in this repository, the main idea is to create python linters, (**linters**) are the mean tool to analye the source code to detect programming errors, style flaws, bugs, suspucius code, etc.
 
-## Game Description
-
-***
-
-The game Tic tac toe _(also called Noughts and crosses, Xs and Os, XOX Game)_ is a too popular game around the world, it simple and quick game to play with people of all ages and provide brain workout too for anybody. Try to place at first 3 Xs / 3 Os in a vertical, horizontal, or diagonal row to win the game.
-
-<img src="img/tic_tac_toe_capture_1.PNG" alt="tic_tac_toe_img1" style="display: block; margin: 0 auto;">
-
-<img src="img/tic_tac_toe_capture_2.PNG" alt="tic_tac_toe_img2" style="display: block; margin: 0 auto;">
-
-### How to play 🎮🕹
+## How to use it 📜
 
 ---
 
-Follow the next steps to start to play Tic Tac Toe.
+Follow the next steps to use this repository.
 
-1.- Use your terminal, search it in your PC or hit at the same time the next keyboard shortcuts: 
+1.- Use your terminal and type `git clone 'link'` the repository:
 
-    - For Windows: <br>
-        **Windows** + **R** <br>
-        Then type _"cmd"_ and hit **Enter** <br>
-    - For Ubuntu: <br>
-        **Ctrl** + **Alt** + **T** <br>
-        Then type _"gnome-terminal"_ and hit **Enter** <br>
-    - For MAC Os <br>
-        Open _"Launchpad"_ or type **F4** <br>
-        Then click on _"Others group files"_ <br>
-        Finally, click on _"Terminal"_ <br>
+    > git clone https://github.com/DanteAlonsoHT/Create_my_own_python_linters.git
 
-2.- Use _"cd" + file-path_ to stay in the game's folder. <br>
-    For example: `cd C:\Users\Dante\Documents\tic_tac_toe_ruby` <br>
-3.- Now type `ruby bin/main.rb` to start up the Tic Tac Toe's game. <br>
-4.- Have fun (It's mandatory to accomplish this step).
+2.- Once you got the repository in your local environment succed go ahead to stay inside the _"Create_my_own_python_linters"_ folder using `cd` in the terminal. <br>
 
-### Rules 📜
+    > cd Create_my_own_python_linters
 
----
+3.- Before running the linters, firstable make sure you have your `file.py` into the `./test` folder, and it was named as `test.py`.
 
-1. Type _player_1 name_, it will use the **'X'** symbol in the game.
-2. Type _player_2 name_, it will use the **'O'** symbol in the game.
-3. The game will show you who starts, **must use a number between (1..9)** available in the game, don't repeat them until finish the current match.
-4. The first one who places at first 3 Xs / 3 Os in a vertical, horizontal, or diagonal row will win the game.
+4.- Use the next command to run the python linters:
+
+    > ruby .\bin\python_linters.rb
+
+**Note:** Nothing appears if you don't have errors in your code, but if you have programming errors, you will see something like that:
 
 ## Built With 🔨
 
