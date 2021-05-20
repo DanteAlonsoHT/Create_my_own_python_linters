@@ -72,4 +72,11 @@ class ErrorChecker < FileLector
             @error_message.concat("\s^\n")
         end
     end
+
+    def check_empty_spaces
+        @line.scan(/\w+/).empty? ? @empty_lines += 1 : @empty_lines = 0
+        if @empty_lines > 1
+            @error_message.concat("#{@lines_counter}:0 x Unexpected extra enter line(s) in the code\s")
+        end
+    end
 end
