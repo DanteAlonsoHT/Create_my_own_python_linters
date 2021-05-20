@@ -6,6 +6,12 @@
 
 As you can see in this repository, the main idea is to create python linters, (**linters**) are the mean tool to analye the source code to detect programming errors, style flaws, bugs, suspucius code, etc.
 
+<center>
+<h2>Bad Code  vs  Good Code</h2>
+</center>
+
+<img src="img/bad_code.PNG" width="48%"> <img src="img/good_code.PNG" width="48%">
+
 ## How to use it 📜
 
 ---

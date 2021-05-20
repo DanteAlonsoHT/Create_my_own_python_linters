@@ -14,7 +14,7 @@ if a == a:
         if a > b:
           print('Hello')
 
-while a == 5:
+while True :
   print ( "Hello" )
   break
 
