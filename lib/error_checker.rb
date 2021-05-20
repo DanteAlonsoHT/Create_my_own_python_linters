@@ -94,7 +94,8 @@ class ErrorChecker < FileLector
   def add_color_to_message
     @error_message.split(/ /).each do |line_alert|
       if line_alert.match(/[0-9]:[0-9]/)
-        @error_message.concat("\n[#{@file_path.colorize(:blue)}]:[#{'Linter Error'.colorize(:red)}]:#{line_alert.colorize(:yellow)}")
+        @alert = "\n[#{@file_path.colorize(:blue)}]:[#{'Error'.colorize(:red)}]:#{line_alert.colorize(:yellow)}"
+        @error_message.concat(@alert)
       elsif line_alert.match(/´/) && !line_alert.match(/\n\w+/)
         @error_message.concat("\s#{line_alert.colorize(:magenta)}")
       else
