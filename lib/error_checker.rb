@@ -2,6 +2,8 @@ require_relative 'reader'
 require 'colorize'
 
 class ErrorChecker < FileLector
+  attr_accessor :empty_lines, :error_message
+
   @empty_lines = 0
   def new_line(line, lines_counter)
     @line = line
