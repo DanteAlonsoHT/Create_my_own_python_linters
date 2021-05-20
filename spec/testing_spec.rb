@@ -2,13 +2,13 @@
 
 require_relative '../bin/python_linters'
 
-test_linter = ErrorChecker.new('test\test.py')
+test_linter = ErrorChecker.new('test/test.py')
 File.foreach(test_linter.file_path) { |line| $line = line }
 
 describe 'ErrorChecker' do
   describe '#file_path' do
     it 'returns the same path declared previously' do
-      expect(test_linter.file_path).to eql 'test\test.py'
+      expect(test_linter.file_path).to eql 'test/test.py'
     end
     it 'returns true if there is a python file' do
       expect(test_linter.file_path.end_with?('.py')).to eql true
