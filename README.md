@@ -28,6 +28,8 @@ Follow the next steps to use this repository.
 
 **Note:** Nothing appears if you don't have errors in your code, but if you have programming errors, you will see something like that:
 
+<img src="img/test_linters.PNG" width="100%">
+
 ## Built With 🔨
 
 - Ruby
@@ -48,6 +50,9 @@ To get a local copy up and running follow these simple example steps.
 - I've included linters to improve and cleaning the Ruby code.
 
 ### Prerequisites
+1.- Install **colorize** to use colors in the terminal:
+
+    > gem install colorize
 
 - IDE to edit and run the code (I used Visual Studio Code 🔥).
 
