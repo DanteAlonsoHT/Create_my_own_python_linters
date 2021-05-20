@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet) ![](<https://img.shields.io/badge/-Ruby-rgb(199%2C%2032%2C%2039)?style=plastic&logo=ruby>)
 
-# Create your OWN Python Linters using Ruby 🙉  <img src="https://image.flaticon.com/icons/png/512/919/919842.png" height="32" width="32">
+# Python Linters using Ruby 🙉  <img src="https://image.flaticon.com/icons/png/512/919/919842.png" height="32" width="32">
 
 > This repository is about an example of how to build your own python linters from scratch using Ruby.
 
-As you can see in this repository, the main idea is to create python linters, (**linters**) are the means tool to analyze the source code to detect programming errors, style flaws, bugs, suspicious code, etc.
+As you can see in this repository, the main idea is to create python linters, (**linters**) are the means tool to analyze the source code to detect programming errors, style flaws, bugs, suspicious code, etc. For this reason, linters are used for improving your code, add more quality, making it easy to read, reusable, and easy to maintain in working environments.
 
 <center>
 <h2>Bad Code  vs  Good Code</h2>
@@ -30,11 +30,22 @@ Follow the next steps to use this repository.
 
 4.- Use the next command to run the python linters:
 
-    > ruby .\bin\python_linters.rb
+    > ruby ./bin/python_linters.rb
 
 **Note:** Nothing appears if you don't have errors in your code, but if you have programming errors, you will see something like that:
 
 <img src="img/test_linters.PNG" width="100%">
+
+## How to test the project 🔰
+
+---
+
+Once you've cloned the repository, and you are inside the main folder for the project (as you did in the 2nd step in "How to use it" part above)
+you can use the next command to test your project:
+
+    > rspec ./spec/testing.rb
+
+Feel free to add more test as you want if you think it would be good for your changed project, you can add test in `./spec/testing.rb`.
 
 ## Built With 🔨
 
@@ -52,7 +63,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Getting Started 
 
-- Tic tac toe to improve and applying OOP in gaming using Ruby.
+- I've included a gem to improve the ruby coding (you can see how to install it the prerequisites below).
 - I've included linters to improve and cleaning the Ruby code.
 
 ### Prerequisites
