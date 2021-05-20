@@ -7,5 +7,5 @@ File.foreach(python_linter.file_path) do |line|
   python_linter.check_empty_spaces
   python_linter.check_indentation
   python_linter.check_errors
-  python_linter.add_color_to_message
+  print python_linter.add_color_to_message
 end

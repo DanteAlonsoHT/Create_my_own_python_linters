@@ -1,8 +1,8 @@
-require_relative 'reader'
+require_relative 'file_lector'
 require 'colorize'
 
 class ErrorChecker < FileLector
-  attr_accessor :empty_lines, :error_message
+  attr_reader :empty_lines, :error_message
 
   @empty_lines = 0
   def new_line(line, lines_counter)
@@ -94,12 +94,13 @@ class ErrorChecker < FileLector
   def add_color_to_message
     @error_message.split(/ /).each do |line_alert|
       if line_alert.match(/[0-9]:[0-9]/)
-        print "\n[#{@file_path.colorize(:blue)}]:[#{'Linter Error'.colorize(:red)}]:#{line_alert.colorize(:yellow)}"
+        @error_message.concat("\n[#{@file_path.colorize(:blue)}]:[#{'Linter Error'.colorize(:red)}]:#{line_alert.colorize(:yellow)}")
       elsif line_alert.match(/´/) && !line_alert.match(/\n\w+/)
-        print "\s#{line_alert.colorize(:magenta)}"
+        @error_message.concat("\s#{line_alert.colorize(:magenta)}")
       else
-        print "\s#{line_alert.colorize(:white)}"
+        @error_message.concat("\s#{line_alert.colorize(:white)}")
       end
     end
+    @error_message
   end
 end

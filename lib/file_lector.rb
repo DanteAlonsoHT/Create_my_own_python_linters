@@ -1,5 +1,5 @@
 class FileLector
-  attr_accessor :file_path, :lines_counter
+  attr_reader :file_path, :lines_counter
 
   def initialize(file_path)
     @file_path = file_path
