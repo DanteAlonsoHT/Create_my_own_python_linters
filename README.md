@@ -4,7 +4,7 @@
 
 > This repository is about an example of how to build your own python linters from scratch using Ruby.
 
-As you can see in this repository, the main idea is to create python linters, (**linters**) are the mean tool to analye the source code to detect programming errors, style flaws, bugs, suspucius code, etc.
+As you can see in this repository, the main idea is to create python linters, (**linters**) are the means tool to analyze the source code to detect programming errors, style flaws, bugs, suspicious code, etc.
 
 <center>
 <h2>Bad Code  vs  Good Code</h2>
@@ -22,11 +22,11 @@ Follow the next steps to use this repository.
 
     > git clone https://github.com/DanteAlonsoHT/Create_my_own_python_linters.git
 
-2.- Once you got the repository in your local environment succed go ahead to stay inside the _"Create_my_own_python_linters"_ folder using `cd` in the terminal. <br>
+2.- Once you got the repository in your local environment succeed go-ahead to stay inside the _"Create_my_own_python_linters"_ folder using `cd` in the terminal. <br>
 
     > cd Create_my_own_python_linters
 
-3.- Before running the linters, firstable make sure you have your `file.py` into the `./test` folder, and it was named as `test.py`.
+3.- Before running the linters, firstly make sure you have your `file.py` into the `./test` folder, and it was named as `test.py`.
 
 4.- Use the next command to run the python linters:
 
@@ -46,7 +46,7 @@ Follow the next steps to use this repository.
 
 To get a local copy up and running follow these simple example steps.
 - Open terminal
-- Clone this project by command `git clone https://github.com/DanteAlonsoHT/Create_my_own_python_linters.git`
+- Clone this project with the command `git clone https://github.com/DanteAlonsoHT/Create_my_own_python_linters.git`
 - `Cd Create_my_own_python_linters` folder
 - Run `bin/python_linters.rb` with Ruby in your terminal
 
