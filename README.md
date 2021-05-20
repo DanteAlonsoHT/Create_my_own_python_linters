@@ -38,9 +38,9 @@ Follow the next steps to use this repository.
 
 To get a local copy up and running follow these simple example steps.
 - Open terminal
-- Clone this project by command `git clone https://github.com/DanteAlonsoHT/tic_tac_toe_ruby.git`
-- `Cd tic_tac_toe_ruby` folder
-- Run `bin/main.rb` with Ruby in your terminal
+- Clone this project by command `git clone https://github.com/DanteAlonsoHT/Create_my_own_python_linters.git`
+- `Cd Create_my_own_python_linters` folder
+- Run `bin/python_linters.rb` with Ruby in your terminal
 
 ## Getting Started 
 
@@ -68,7 +68,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/DanteAlonsoHT/tic_tac_toe_ruby/issues).
+Feel free to check the [issues page](https://github.com/DanteAlonsoHT/Create_my_own_python_linters/issues).
 
 ## Show your support
 
